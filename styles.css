@@ -3,8 +3,71 @@
   /* padding: 0;  */
   box-sizing: border-box;
   /* background-color: orangered; */
+} 
+
+ul,li{ 
+ list-style-type: none;
+} 
+
+.container{ 
+  display: grid; 
+  grid-template-columns: 0.5fr 3fr;  
+  grid-template-rows: 0.5fr 4fr;
 }
 
-.sidebar{ 
-  border: solid black;
+.left-sidebar{ 
+  border: solid black; 
+  grid-column: 1; 
+  grid-row: 1 / -1;   
+  display: grid;   
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7,0.3fr);
+  justify-items: center;  
+  gap: 2em;
+
+} 
+
+.header{ 
+  border: solid pink; 
+  grid-column: 2; 
+  grid-row: 1;
+}
+
+.article{ 
+  border: solid blue; 
+  grid-column: 2; 
+  display: grid; 
+  grid-template-columns: 2fr 1fr;
+} 
+
+.right-sidebar{ 
+  border: solid red;
+} 
+
+.middle-text{ 
+  border: solid yellow;
+} 
+
+.dashboard{ 
+  border: solid green; 
+  text-align: center; 
+  align-self: center;
+}
+
+.user-details{ 
+  border: solid rebeccapurple; 
+  text-align: center; 
+  align-self: center; 
+  height: 20em; 
+  display: grid;
+  gap: 0.5em;
+} 
+
+.account-settings{ 
+  border: solid orange; 
+  text-align: center; 
+  align-self: center; 
+  height: 7em; 
+  display: grid;
+  gap: 1em;
 }
