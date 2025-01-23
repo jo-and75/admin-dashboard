@@ -22,16 +22,24 @@ ul,li{
   grid-row: 1 / -1;   
   display: grid;   
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(7,0.3fr);
-  justify-items: center;  
-  gap: 2em; 
+  grid-template-rows: repeat(10,50px);
+  justify-items: flex-start;  
+  gap: 1em; 
   background-color: #113a3f; 
-  font-weight: bold; 
-  font-size: 1.2em;
-} 
+  font-weight: bold;  
+  padding: 1.5em 0 0 1.5em ;
+}  
 
 .side-content{ 
-  color: #b1764d;
+  color: #b1764d; 
+  font-size: 1em; 
+  /* border: solid yellow;   */
+  display: flex;  
+  gap: 0.5em; 
+  align-items: center;
+  /* grid-template-columns: 0.5fr 1fr;   */
+  /* align-items: center; */
+  /* padding: 0.5em; */
 }
 
 .header{ 
@@ -43,7 +51,7 @@ ul,li{
 
 .article{ 
   border: solid blue; 
-  grid-column: 2; 
+  grid-column: 2 / -1; 
   display: grid; 
   grid-template-columns: 2fr 1fr; 
   background-color: whitesmoke; 
@@ -78,26 +86,24 @@ ul,li{
 
 .dashboard{ 
   /* border: solid green;  */
-  text-align: center; 
+  text-align: center;  
   align-self: center;
+  display: flex; 
+  align-items: center; 
+  gap: 1em; 
+  font-size: 1.5em;
 }
 
-.user-details{ 
-  /* border: solid rebeccapurple;  */
-  text-align: center; 
-  align-self: center; 
-  height: 20em; 
-  display: grid;
-  gap: 0.5em;
-} 
+
 
 .account-settings{ 
-  border: solid orange; 
+  /* border: solid orange;  */
   text-align: center; 
   align-self: center; 
   height: 7em; 
   display: grid;
-  gap: 1em;
+  gap: 1em; 
+  /* margin-top: ; */
 }  
 
 .top-right{ 
@@ -108,13 +114,16 @@ ul,li{
 } 
 
 form{  
-  align-self: center; 
-  /* border: solid orange; */
+  /* border: solid red;   */
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start; 
+  padding: 1em 0 0 1em;
 } 
 
 input{ 
   width: 60em; 
-  margin-left: 10em; 
+  margin-left: 2em; 
   height: 2.5em; 
   border-radius: 25px; 
   background-color: rgb(231, 238, 238); 
@@ -190,4 +199,13 @@ hr{
 .trending{ 
   border: solid orchid; 
   border-radius: 20px;
+} 
+
+svg{ 
+  fill: #b1764d; 
+  height: 2em;
+} 
+
+form > svg{ 
+  fill: #113a3f;
 }
