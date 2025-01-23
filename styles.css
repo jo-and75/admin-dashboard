@@ -37,9 +37,7 @@ ul,li{
   display: flex;  
   gap: 0.5em; 
   align-items: center;
-  /* grid-template-columns: 0.5fr 1fr;   */
-  /* align-items: center; */
-  /* padding: 0.5em; */
+ 
 }
 
 .header{ 
@@ -63,7 +61,7 @@ ul,li{
   padding: 0 1em 0 1em; 
   display: grid; 
   grid-template-rows: 60px 0.2fr 60px 0.2fr;
-  gap: 1.5em;
+  gap: 1.5em; 
 } 
 
 .middle-text{ 
@@ -114,7 +112,6 @@ ul,li{
 } 
 
 form{  
-  /* border: solid red;   */
   display: flex;
   align-items: center; 
   justify-content: flex-start; 
@@ -122,11 +119,12 @@ form{
 } 
 
 input{ 
-  width: 60em; 
+  display: flex; 
+  flex: auto;
   margin-left: 2em; 
   height: 2.5em; 
   border-radius: 25px; 
-  background-color: rgb(231, 238, 238); 
+  background-color: whitesmoke; 
   border: none;
 }
 
@@ -145,43 +143,46 @@ span{
   font-size: 1.5em;
 } 
 
-.buttons{ 
-  grid-column: 2;  
-  display: grid; 
-  grid-template-columns: repeat(3,8em);
+.buttons{  
+  grid-column: 2;
+  display: flex;    
+  flex: auto;
+  gap: 1em;   
+  margin-right: 1em;
+  /* border: solid orangered;  */
+  flex-wrap: wrap;
 } 
 
 button{ 
   font-size: 1em; 
-  width: 6em;  
   height: 3em; 
   border-radius: 25px; 
   border: none;
   align-self: center; 
-  justify-self: center; 
   background-color: #113a3f; 
   font-weight: bold; 
-  color: white;
+  color: white;  
+  flex: auto;
 } 
 
 .card{   
-  border: solid black;     
   border-radius: 20px;
   text-align:left; 
   padding: 1.5em;   
   font-size: 1.1em; 
-  color:  #113a3f;
+  color:  #113a3f; 
+  box-shadow: 2px 2px 3px 2px #ccd1d8 ;
+
 } 
 
 .announcements{ 
-  border: solid #b1764d; 
-  display: grid;   
-  grid-template-columns: 1fr; 
-  grid-template-rows: repeat(minmax(auto-fit,minmax(300px,0.8fr))); 
+  /* border: solid #b1764d;  */
   border-radius: 20px;  
   font-size: 1.2em; 
   padding: 1em; 
-  color:#113a3f;
+  color:#113a3f;  
+  box-shadow: 2px 2px 3px 2px #ccd1d8 ;
+
 }
  
 hr{ 
@@ -190,6 +191,7 @@ hr{
   margin: 10px 0; 
   background-color:#b1764d;
 }
+
 #last-heading{ 
   grid-column: 1 / -1; 
   font-size: 1.5em; 
@@ -197,8 +199,10 @@ hr{
 } 
 
 .trending{ 
-  border: solid orchid; 
-  border-radius: 20px;
+  /* border: solid #b1764d; s */
+  border-radius: 20px; 
+  background-color: whitesmoke; 
+  box-shadow: 2px 2px 3px 2px #ccd1d8 ;
 } 
 
 svg{ 
@@ -207,5 +211,61 @@ svg{
 } 
 
 form > svg{ 
-  fill: #113a3f;
+  fill:whitesmoke;
+}
+
+.user-profile { 
+  color: black; 
+  padding:1em 0 0 1em; 
+  font-size: 1.2em; 
+  display: flex; 
+  align-items: center;
+  /* border: solid blue; */
+} 
+
+.name{ 
+  font-size: 2em; 
+  align-self: center; 
+  /* justify-self: flex-start; */
+} 
+
+.jayce-svg{ 
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid black;
+}  
+
+p > svg{ 
+  fill: black;
+} 
+
+p > img{ 
+  width: 70px;
+  height: 70px; 
+  border: solid black; 
+  border-radius: 50%;
+}
+
+.top-right > p{ 
+  /* border: solid green;  */
+  display: flex;
+  align-items: center; 
+  gap: 1em;
+  font-size: 1.2em; 
+  font-weight: bold;  
+  justify-self: flex-end; 
+  margin-right: 1em;
+}
+
+li > img{ 
+  width: 70px;
+  height: 70px; 
+  border-radius: 50%; 
+  border: solid #b1764d; 
+} 
+
+li{ 
+  display: flex;
+  gap: 1em;
 }
