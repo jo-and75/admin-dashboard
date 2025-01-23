@@ -42,7 +42,6 @@ ul,li{
 }
 
 .article{ 
-  border: solid blue; 
   grid-column: 2 / -1; 
   display: grid; 
   grid-template-columns: 2fr 1fr; 
@@ -51,20 +50,18 @@ ul,li{
 } 
 
 .right-sidebar{ 
-  border: solid red; 
-  padding: 0 1em 0 1em; 
+  padding: 2em 1em 0 1em; 
   display: grid; 
   grid-template-rows: 60px 0.2fr 60px 0.2fr;
   gap: 1.5em; 
 } 
 
 .middle-text{ 
-  border: solid green;  
   display: grid; 
   overflow: auto;
   grid-template-rows: 60px repeat(3,0.5fr); 
   grid-template-columns: repeat(auto-fit,minmax(350px,0.85fr)); 
-  padding: 0 1em 0 1em;   
+  padding: 2em 1em 0 1em;   
   gap: 1.5em; 
 }   
 
