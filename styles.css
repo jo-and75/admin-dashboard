@@ -14,7 +14,6 @@ ul,li{
 }
 
 .left-sidebar{ 
-  /* border: solid black;  */
   grid-column: 1; 
   grid-row: 1 / -1;   
   display: grid;   
@@ -30,7 +29,6 @@ ul,li{
 .side-content{ 
   color: #b1764d; 
   font-size: 1em; 
-  /* border: solid yellow;   */
   display: flex;  
   gap: 0.5em; 
   align-items: center;
@@ -38,7 +36,6 @@ ul,li{
 }
 
 .header{ 
-  /* border: solid pink;  */
   grid-column: 2; 
   grid-row: 1; 
   background-color:#b1764d;
@@ -72,7 +69,6 @@ ul,li{
 }   
 
 #heading{ 
-  /* border: solid red;  */
   grid-column: 1/-1; 
   font-size: 1.5em;
   font-weight: bold;  
@@ -80,7 +76,6 @@ ul,li{
 }  
 
 .dashboard{ 
-  /* border: solid green;  */
   text-align: center;  
   align-self: center;
   display: flex; 
@@ -92,7 +87,6 @@ ul,li{
 
 
 .account-settings{ 
-  /* border: solid orange;  */
   text-align: center; 
   align-self: center; 
   height: 7em; 
@@ -102,7 +96,6 @@ ul,li{
 }  
 
 .top-right{ 
-  /* border: solid red;  */
   display: grid; 
   grid-template-rows: 0.5fr; 
   grid-template-columns: 0.8fr 0.5fr;
@@ -130,7 +123,6 @@ input{
 }
 
 .last-level{ 
-  /* border: solid greenyellow;  */
   display: grid; 
   grid-template-columns: 1fr 0.5fr; 
 } 
@@ -146,7 +138,6 @@ span{
   flex: auto;
   gap: 1em;   
   margin-right: 1em;
-  /* border: solid orangered;  */
   flex-wrap: wrap;
 } 
 
@@ -168,12 +159,13 @@ button{
   padding: 1.5em;   
   font-size: 1.1em; 
   color:  #113a3f; 
-  box-shadow: 2px 2px 3px 2px #ccd1d8 ;
+  box-shadow: 2px 2px 3px 2px #ccd1d8 ; 
+  display: flex; 
+  flex-direction: column;
 
 } 
 
 .announcements{ 
-  /* border: solid #b1764d;  */
   border-radius: 20px;  
   font-size: 1.2em; 
   padding: 1em; 
@@ -196,7 +188,6 @@ hr{
 } 
 
 .trending{ 
-  /* border: solid #b1764d; s */
   border-radius: 20px; 
   background-color: whitesmoke; 
   box-shadow: 2px 2px 3px 2px #ccd1d8 ;
@@ -217,13 +208,11 @@ form > svg{
   font-size: 1.2em; 
   display: flex; 
   align-items: center;
-  /* border: solid blue; */
 } 
 
 .name{ 
   font-size: 2em; 
   align-self: center; 
-  /* justify-self: flex-start; */
 } 
 
 .jayce-svg{ 
@@ -245,7 +234,6 @@ p > img{
 }
 
 .top-right > p{ 
-  /* border: solid green;  */
   display: flex;
   align-items: center; 
   gap: 1em;
@@ -264,4 +252,11 @@ li > img{
 li{ 
   display: flex;
   gap: 1em;
+} 
+
+.card-icons{ 
+  height: 100%; 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-end;
 }
